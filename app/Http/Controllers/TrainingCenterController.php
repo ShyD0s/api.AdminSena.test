@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Training_center;
 use Illuminate\Http\Request;
 
 class TrainingCenterController extends Controller
