@@ -13,7 +13,10 @@ Route::get('/user', function (Request $request) {
     return $request->user();
 })->middleware('auth:sanctum');
 
+//Configuracion de prefijo y ruta base para recordar 
 // prefix: api/v1
+// http://api.adminsena.test/api/v1/"nombreendpoint"
+
 
 //crud de teachers 
 //GET
