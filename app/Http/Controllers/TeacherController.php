@@ -9,7 +9,7 @@ class TeacherController extends Controller
 {
     //crud docentes
 
-    public function index() //obtener todos los docentes con su informacion relacionada
+    public function index() //obtener todos los docentes con su informacion relacionada a area, centro de formacion y cursos
     {
         $teachers = Teacher::with('area', 'trainingCenter', 'courses')->get();
         return response()->json($teachers);

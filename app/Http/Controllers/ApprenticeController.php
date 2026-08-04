@@ -9,7 +9,7 @@ class ApprenticeController extends Controller
 {
     //crud para aprendices
 
-    public function index() //obtener datos de los aprendices con su informacion relacionada
+    public function index() //obtener datos de los aprendices con su informacion relacionada a curso y computadores
     {
         $apprentices = Apprentice::with('course', 'computer')->get();
         return response()->json($apprentices);
